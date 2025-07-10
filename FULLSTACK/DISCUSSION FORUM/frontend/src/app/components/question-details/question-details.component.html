@@ -1,0 +1,46 @@
+<mat-card class="question-detail-card">
+  <mat-card-title class="question-title"
+    >💬{{ question?.title }}</mat-card-title
+  >
+  <mat-card-content class="question-description">{{
+    question?.description
+  }}</mat-card-content>
+</mat-card>
+
+<div class="answer-form-container">
+  <app-answer
+    [questionId]="questionId"
+    (answerSubmitted)="onAnswerSubmitted()"
+  ></app-answer>
+</div>
+
+<!-- Answer Section -->
+<!-- Answer Section -->
+<h3 class="answer-heading">Answers</h3>
+<div *ngIf="answers.length === 0" class="no-answers">No answers yet.</div>
+
+<div *ngFor="let answer of answers">
+  <mat-card class="answer-card">
+    <div class="answer-header">
+      <mat-icon class="profile-icon">account_circle</mat-icon>
+      <span class="user-name">User</span>
+    </div>
+
+    <div class="answer-text">{{ answer.answer_text }}</div>
+    <div class="answer-meta">
+      <small class="answer-date">
+        <span class="answer-emoji">🕒</span>
+        <span class="answer-time">{{
+          answer.created_at | date : "short"
+        }}</span>
+
+        <!-- Emoji for time -->
+      </small>
+      <app-like-button
+        [answerId]="answer.id"
+        [likes]="answer.likes"
+        (liked)="fetchAnswers()"
+      ></app-like-button>
+    </div>
+  </mat-card>
+</div>

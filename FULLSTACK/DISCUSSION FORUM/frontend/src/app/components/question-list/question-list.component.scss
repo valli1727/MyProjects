@@ -1,0 +1,176 @@
+/* Styles for the entire page */
+.question-card {
+  background-color: #f5f8f7; // soft gray-green background
+  border-radius: 20px;
+  padding: 16px;
+  margin-bottom: 20px;
+  box-shadow: 2px; 
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.question-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Filter bar */
+.filter-bar {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.search-field, .sort-field {
+  flex: 1;
+}
+
+/* Ask button positioning */
+.post-btn {
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  background-color: #563de1;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 16px 24px;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.post-btn:hover {
+  transform: scale(1.05);
+  background-color: #563de1;
+}
+
+/* Footer styles */
+.question-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  margin-left:15px;
+  padding-top: 10px;
+  border-top: 1px solid #e0e0e0;
+  font-size: 16px;
+  color: #444;
+}
+
+.icon-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon-circle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 18px;
+  background-color: #f1f1f1;
+}
+
+.icon-like {
+  background-color: #ffcdd2;
+}
+
+.icon-date {
+  background-color: #c8e6c9;
+}
+
+/* Styles for tag list */
+.tag-list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  padding-left: 0;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #c8e6c9;
+  color: #1b5e20;
+  padding: 8px 17px;
+  border-radius: 20px;
+  font-size: 15px;
+}
+
+.tag-label {
+  color: #777;
+  font-weight: 400;
+  margin-right: 2px;
+  font-style: italic;
+  font-size: 17px;
+}
+
+/* Card content */
+mat-card-content p {
+  font-style: italic;
+  font-weight: 500;
+  color: #777;
+  font-size: 17px;
+  margin: 0 0 8px 0;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limits to 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+/* View button */
+.custom-view-button {
+  color: #563de1;
+  margin-left:10px;
+  border: 1px solid #563de1;
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.custom-view-button:hover {
+  background-color: #f1e6ff;
+  color: #5e05f5;
+}
+
+/* Card header */
+.card-header {
+  padding-right: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 8px;
+}
+
+mat-card-title {
+  flex-grow: 1;
+  margin-left: 12px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
