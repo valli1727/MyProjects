@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* playfair display */
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+/* caveat */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+/* crimson text */
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+/* Yeseva One */
+*{
+    margin:0;
+    padding:0;
+    scroll-behavior:smooth;
+    box-sizing: border-box;
+    background: #EEEEEE;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+   
+}
+
+.logo{
+    font-size:32px;
+    font-weight:800;
+    text-decoration:none;
+    color: #DC5F00;
+    font-family: "Yeseva One";
+    border: 1px solid black;
+    border-radius: 50px;
+    
+
+}
+.navbar a{
+    
+    position: relative;
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+ .navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #DC5F00;
+    transition: .3s;
+}
+.navbar a:hover::before{
+    width:100%;
+} 
+.maincontent h2{
+    margin-top: 150px;
+    font-weight: 900;
+    font-size: 50px;
+    margin-left:50px;
+    color:#DC5F00;
+    
+}
+.maincontent h3{
+    color: #EEEEEE;
+    background: #DC5F00;
+    margin-left: 0px;
+    height: 50px;
+    text-align: center;
+    padding: 4px;
+    font-size: 40px;
+}
+main{
+    margin:30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+    transition: .3s;
+    margin: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    padding-top: 10px;
+    background-color:#DC5F00;
+    width: 250px;
+    height:450px;
+    margin-inline:1rem;
+    
+  }
+
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container  {
+    padding: 2px 16px;
+    background: #DC5F00;
+    font-size: 16px;
+    height:50px;
+  }
+  
+  .container p  {
+    background: #DC5F00;
+    
+
+  }
+
+.card button{
+    background-color: #EEEEEE;
+    border-radius: 100px;
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "caveat";
+    color: black;
+    padding: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-top: 120px;
+    text-align: center;
+}
+.card button:hover
+{
+    background-color: black;
+    color:#EEEEEE;
+}
+
+
+/* img{
+    width:120px;
+    height: 120px;
+} */
+
+/* Hide the checkbox input */
+.toggle-input {
+    display: none;
+}
+
+/* Hide the image container by default */
+.image-container {
+    display: none;
+
+}
+
+/* When the checkbox is checked, display the image container */
+.toggle-input:checked + .toggle-label + .image-container {
+    display: flex;
+}
+
+.toggle-label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #DC5F00;
+    color: white;
+    cursor: pointer;
+    border-radius: 100px;
+    text-align: center;
+}
+.toggle-label:hover
+{
+    background-color: black;
+    color:#EEEEEE;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);;
+
+}
+
+.center{
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+}
+
+.toggle-input:checked + .toggle-label {
+    display: none;
+}
+
+.titletxt{
+
+    font-family:"caveat";
+    color: #DC5F00;
+    font-size: 2rem;
+    margin:20px;
+}
+.text{
+/*     background-color: #DC5F00;
+ */
+ font-size: 1.25rem;
+ font-family: "crimson text";
+ margin:20px;
+ text-align: justify;
+
+}
+
+.ft{
+    background-color: #DC5F00;
+    text-align: center;
+    font-weight: bold;
+    
+}
+h3{
+    color: #EEEEEE;
+    background-color: #dc5f0063;
+    border: 2px solid #DC5F00;
+    border-radius: 50px 50px 0 0;
+    padding: 1rem;
+    text-align: center;
+}
+ul {
+    list-style: none;
+    margin-bottom: 0;
+    display: inline;
+    
+}
+li{
+    list-style: none;
+    font-size: large;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+
+
+
+}
+.mainlists{
+
+    display: flex;
+    flex-flow:row;
+    justify-content: space-evenly;
+    padding:1rem;
+    background: #dc5f004d;
+    border-top: 2px solid #DC5F00;
+    
+}
+.lists{
+   border-radius: 50px 50px 0 0;
+}
+a:any-link{
+    text-decoration: none;
+    color:black;
+}
+a:hover{
+    color:#DC5F00;
+}
