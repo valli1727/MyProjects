@@ -1,0 +1,26 @@
+.rating-outer {
+  display: inline-block;
+  position: relative;
+  font-family: FontAwesome;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.rating-outer::before {
+  content: '\f005 \f005 \f005 \f005 \f005'; /* 5 stars */
+  font-family: FontAwesome;
+}
+
+.rating-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #f8ce0b;
+}
+
+.rating-inner::before {
+  content: '\f005 \f005 \f005 \f005 \f005'; /* 5 stars filled */
+  font-family: FontAwesome;
+}
